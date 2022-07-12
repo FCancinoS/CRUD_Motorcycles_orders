@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Cotizador de motocicletas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container mt-4">    
+            <h1 class="text-center"> Cotizador de motocicletas</h1>
+            <a th:href="@{/new}" class = "btn btn-primary">Nuevo</a>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td>#Orden</td>
+                        <td>Modelo</td>
+                        <td>Version</td>
+                        <td>Fecha</td>
+                        <td>Costo Desglosado</td>
+                        <td>Costo total</td>
+                        <td>Monto de Enganche</td>
+                        <td>Mensualidades</td>
+                        <td>Nombre</td>
+                        <td>Celular</td>
+                        <td>Correo</td>
+                        <td>Acciones</td>
+                    </tr>
+                </thead>
+                <thbody>
+                    <tr th:each="orden:${ordenes}">
+                        <td th:text="${orden.id}"></td>
+                        <td th:text="${orden.modelo}"></td>
+                        <td th:text="${orden.version}"></td>
+                        <td th:text="${#dates.format(orden.fecha,'dd-MM-yyy')}"></td>
+                        <td th:text="${orden.costoDesglosado}"></td>
+                        <td th:text="${orden.costoTotal}"></td>
+                        <td th:text="${orden.enganche}"></td>
+                        <td th:text="${orden.mensaulidades}"></td>
+                        <td th:text="${orden.nombre}"></td>
+                        <td th:text="${orden.celular}"></td>
+                        <td th:text="${orden.correo}"></td>
+                        <td>
+                            <a th:href="@{/editar/}+${orden.id}" class ="btn btn-warning text-white">Editar</a>
+                            <a th:href="@{/eliminar/}+${orden.id}"class ="btn btn-danger text-white">Eliminar</a>
+                        </td>
+                    </tr>
+                </thbody>
+            </table>
+        </div>
+    </body>
+</html>
