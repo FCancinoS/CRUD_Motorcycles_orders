@@ -1,7 +1,16 @@
-# Motorcycles
-Cotizador de motocicletas utilizando Springboot, java, mysql, thymeleaf y  html 
+# Quote system for motorcycles
 
 
-para el correcto funcionamiento es necesario crear una base de datos con el nombre "db_cotizaciones"
+## Tools
 
-La aplicación funciona en el puerto 9090
+- Languages: Java and HTML
+- Framework: Springboot
+- Database: mysql
+
+Another tools: 
+- thymeleaf lex and syntax
+- project made using Apache Netbeans
+
+
+In order to run the application is necesary to create a database named **"db_cotizaciones"**
+Application runs on port: *9090*
