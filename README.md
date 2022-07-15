@@ -9,7 +9,7 @@
 
 Another tools: 
 - thymeleaf lex and syntax
-- project made using Apache Netbeans
+- project developed using Apache Netbeans
 
 
 In order to run the application is necesary to create a database named **"db_cotizaciones"**
