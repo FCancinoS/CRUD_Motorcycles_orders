@@ -1,6 +1,6 @@
 # Quote system for motorcycles (CRUD)
 
-##Functionality
+## Functionality
 
 This project alows you to create quotes that are conformed by:
 
