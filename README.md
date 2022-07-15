@@ -1,6 +1,18 @@
 # Quote system for motorcycles (CRUD)
 
+##Functionality
 
+This project alows you to create quotes that are conformed by:
+
+- Model
+- Version
+- Date
+- Total cost
+- Discount cost
+- Name
+- Phone
+- Email
+Among other things
 ## Tools
 
 - Languages: Java and HTML
