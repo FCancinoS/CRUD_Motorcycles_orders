@@ -12,7 +12,10 @@ This project alows you to create quotes that are conformed by:
 - Name
 - Phone
 - Email
+
+
 Among other things
+
 ## Tools
 
 - Languages: Java and HTML
